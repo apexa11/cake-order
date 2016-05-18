@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            background-color: pink;
+        }
+        
+        #display {
+            background-color: #C46FBE;
+            color: black;
+            height: 20px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Make Your Cake!</h1>
+    <img src="images/cake.jpeg" style="width:150px;height:130px;" />
+    <br>
+    <h1>Size of the Cake </h1>
+
+    <form action="" id="cakeform" onsubmit="return false;">
+        <input type="radio" name="sizeofcake" value="roundcake6" onclick="total()">Round Cake 6"- serve 8 people($20)<br>
+        <input type="radio" name="sizeofcake" value="roundcake8" onclick="total()">Round Cake 8"- serve 12 people($25)<br>
+        <input type="radio" name="sizeofcake" value="roundcake10" onclick="total()">Round Cake 10"- serve 16 people($35)<br>
+        <input type="radio" name="sizeofcake" value="roundcake12" onclick="total()">Round Cake 12"- serve 30 people($75)<br>
+
+        <br>
+        <label for="filling"><b>Filing :<b></label>
+        <select id="Filling" onclick="total()">
+			<option value="none">Select Filling</option>
+			<option value="pineple flavour">Pineple flavour($5)</option>
+			<option value="chocolate flavour">Chocolate flavour($7)</option>
+			<option value="cookies & cream flavour">Cookies & cream flavour($5)</option>
+			<option value="choco flavour">Choco flavour($7)</option>
+		</select><br>
+        <br>
+        <input type="checkbox" name='candles' id="candles" onclick="total()"><b>including candles($5)</b><br>
+
+        <input type="checkbox" name='inscription' id="inscription" onclick="total()"><b>include inscription($20)</b><br>
+
+        <label for="message"><b> Drop Your Message Here: <b></label>
+        <input type="text" placeholder="Enter Your Message"> <br>
+        <br>
+
+        <br>
+        <b>Your Total:<b> <div id="display" ></div> <br>
+		   <br>
+		   <h2>Contact Details</h2>
+		   <lable for="name">Name :</lable>
+		   <input type="text" /><br><br>
+		   <lable for="address">Address :</lable>
+		   <textarea name="add" rows="3" cols="25"></textarea><br><br>
+		   <lable for="phonr no">Phone No :</lable>
+		   <input type="number" /><br><br>
+		   <label for="deliver date">Deliver Date:</label>
+			<input type="date" /><br><br>
+			<br>
+			<a href="images/cake.html" target="_blank">
+			<img src="">
+		   <input type="button" value="Submit" /> </a>
+			
+			
+</form>
+
+<script src="cake.js" ></script>
+
+</body>
+</html>
